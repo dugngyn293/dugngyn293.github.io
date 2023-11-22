@@ -6,7 +6,7 @@
 .row::after {
     clear: both;
     display: block;
-    content: "";
+    content: ""; 
 }
 
 .mt-8 {
@@ -55,6 +55,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 
 }
 
@@ -110,12 +111,12 @@ html {
 #nav .nav-arrow-down {
     font-size: 13px;
 }
-
+#header .menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
 }
-
+#header .menu-btn:hover,
 #header:hover .search-btn {
     background-color: #f44336;
     cursor: pointer;
@@ -162,9 +163,12 @@ height: 2700px;
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 #content .section-heading{
@@ -435,3 +439,4 @@ button#buy-tickets {
     text-transform: uppercase;
     border: none;
 }
+
